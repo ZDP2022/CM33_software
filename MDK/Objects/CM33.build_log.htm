@@ -1,0 +1,1042 @@
+<html>
+<body>
+<pre>
+<h1>�Vision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ��Vision V5.35.0.0
+Copyright (C) 2021 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 1 ZDP, 1, LIC=21E4T-RN776-EVR1R-KE6NX-AXNRK-82UBQ
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.35.0.2
+Toolchain Path:  E:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.16
+Assembler:       Armasm.exe V6.16
+Linker/Locator:  ArmLink.exe V6.16
+Library Manager: ArmAr.exe V6.16
+Hex Converter:   FromElf.exe V6.16
+CPU DLL:         
+Dialog DLL:      
+Target DLL:      CMSIS_AGDI_V8M.DLL V1.7.0.0
+Dialog DLL:      TCM.DLL V1.53.0.0
+ 
+<h2>Project:</h2>
+E:\zhiduojing\ahb_adc_mux\CM33_software\MDK\MUXadc.uvprojx
+Project File Date:  03/19/2025
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.16', folder: 'E:\Keil_v5\ARM\ARMCLANG\Bin'
+Rebuild target 'Target 1'
+../Lib/BSP/timer.c(1): warning: In file included from...
+../Lib/CMSIS/Device/StdPeriph_Driver/inc\STAR_timer.h(9): warning: In file included from...
+../Lib/CMSIS/Device/Include\STAR.h(178): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+../Lib/CMSIS/Device/Include\STAR.h(196): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+../Lib/CMSIS/Device/Include\STAR.h(218): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+../Lib/BSP/timer.c(5): warning: In file included from...
+../Lib/CMSIS/Device/StdPeriph_Driver/inc\STAR_gpio.h(186): warning: no newline at end of file [-Wnewline-eof]
+#endif /* __STAR_GPIO_H */
+                          ^
+../Lib/BSP/timer.c(59): warning: no previous prototype for function 'TIMER0_Handler' [-Wmissing-prototypes]
+void TIMER0_Handler(void)
+     ^
+../Lib/BSP/timer.c(59): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void TIMER0_Handler(void)
+^
+static 
+../Lib/BSP/timer.c(67): warning: no previous prototype for function 'TIMER1_Handler' [-Wmissing-prototypes]
+void TIMER1_Handler(void)
+     ^
+../Lib/BSP/timer.c(67): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void TIMER1_Handler(void)
+^
+static 
+6 warnings generated.
+compiling timer.c...
+../Lib/BSP/uart.c(1): warning: In file included from...
+../Lib/CMSIS/Device/Include\STAR.h(178): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+../Lib/CMSIS/Device/Include\STAR.h(196): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+../Lib/CMSIS/Device/Include\STAR.h(218): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+../Lib/BSP/uart.c(2): warning: In file included from...
+../Lib/CMSIS/Device/StdPeriph_Driver/inc\STAR_gpio.h(186): warning: no newline at end of file [-Wnewline-eof]
+#endif /* __STAR_GPIO_H */
+                          ^
+../Lib/BSP/uart.c(3): warning: In file included from...
+../Lib/CMSIS/Device/StdPeriph_Driver/inc\STAR_uart.h(27): warning: padding size of 'UART_InitTypeDef' with 1 byte to alignment boundary [-Wpadded]
+typedef struct
+        ^
+../Lib/BSP/uart.c(65): warning: no previous prototype for function 'uart_init' [-Wmissing-prototypes]
+void uart_init(uint32_t BundRate)
+     ^
+../Lib/BSP/uart.c(65): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void uart_init(uint32_t BundRate)
+^
+static 
+../Lib/BSP/uart.c(76): warning: no previous prototype for function 'UART0_Handler' [-Wmissing-prototypes]
+void UART0_Handler(void)
+     ^
+../Lib/BSP/uart.c(76): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void UART0_Handler(void)
+^
+static 
+../Lib/BSP/uart.c(95): warning: no previous prototype for function 'UART1_Handler' [-Wmissing-prototypes]
+void UART1_Handler(void)
+     ^
+../Lib/BSP/uart.c(95): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void UART1_Handler(void)
+^
+static 
+../Lib/BSP/uart.c(114): warning: no previous prototype for function 'UART2_Handler' [-Wmissing-prototypes]
+void UART2_Handler(void)
+     ^
+../Lib/BSP/uart.c(114): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void UART2_Handler(void)
+^
+static 
+9 warnings generated.
+compiling uart.c...
+../Lib/CMSIS/Device/StdPeriph_Driver/src/STAR_rcc.c(1): warning: In file included from...
+../Lib/CMSIS/Device/StdPeriph_Driver/inc\STAR_rcc.h(9): warning: In file included from...
+../Lib/CMSIS/Device/Include\STAR.h(178): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+../Lib/CMSIS/Device/Include\STAR.h(196): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+../Lib/CMSIS/Device/Include\STAR.h(218): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+3 warnings generated.
+compiling STAR_rcc.c...
+../Lib/BSP/io_spi.c(1): warning: In file included from...
+../Lib/BSP/io_spi.h(4): warning: In file included from...
+../Lib/CMSIS/Device/Include\STAR.h(178): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+../Lib/CMSIS/Device/Include\STAR.h(196): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+../Lib/CMSIS/Device/Include\STAR.h(218): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+../Lib/BSP/io_spi.c(1): warning: In file included from...
+../Lib/BSP/io_spi.h(5): warning: In file included from...
+../Lib/CMSIS/Device/StdPeriph_Driver/inc\STAR_gpio.h(186): warning: no newline at end of file [-Wnewline-eof]
+#endif /* __STAR_GPIO_H */
+                          ^
+../Lib/BSP/io_spi.c(1): warning: In file included from...
+../Lib/BSP/io_spi.h(13): warning: this function declaration is not a prototype [-Wstrict-prototypes]
+void SPI_GPIO_Init();
+                  ^
+                   void
+../Lib/BSP/io_spi.h(19): warning: no newline at end of file [-Wnewline-eof]
+#endif
+      ^
+../Lib/BSP/io_spi.c(3): warning: no previous prototype for function 'SPI_GPIO_Init' [-Wmissing-prototypes]
+void SPI_GPIO_Init()
+     ^
+../Lib/BSP/io_spi.h(13): note: this declaration is not a prototype; add 'void' to make it a prototype for a zero-parameter function
+void SPI_GPIO_Init();
+     ^
+                   void
+../Lib/BSP/io_spi.c(3): warning: this old-style function definition is not preceded by a prototype [-Wstrict-prototypes]
+void SPI_GPIO_Init()
+                  ^
+../Lib/BSP/io_spi.c(27): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                        STAR_GPIO0->DATA |= ( Bit_SET << GPIO_Pin_x );
+                                         ~~   ~~~~~~~~^~~~~~~~~~~~~
+../Lib/BSP/io_spi.c(31): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                        STAR_GPIO0->DATA &= (~( Bit_SET << GPIO_Pin_x ));
+                                         ~~  ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../Lib/BSP/io_spi.c(36): warning: unused parameter 'GPIO_Pin_x' [-Wunused-parameter]
+uint8_t SPI_GPIO_RdData(uint16_t GPIO_Pin_x)
+                                 ^
+../Lib/BSP/io_spi.c(76): warning: no newline at end of file [-Wnewline-eof]
+}
+ ^
+12 warnings generated.
+compiling io_spi.c...
+../Lib/CMSIS/Device/StdPeriph_Driver/src/STAR_gpio.c(1): warning: In file included from...
+../Lib/CMSIS/Device/StdPeriph_Driver/inc\STAR_gpio.h(9): warning: In file included from...
+../Lib/CMSIS/Device/Include\STAR.h(178): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+../Lib/CMSIS/Device/Include\STAR.h(196): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+../Lib/CMSIS/Device/Include\STAR.h(218): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+../Lib/CMSIS/Device/StdPeriph_Driver/src/STAR_gpio.c(1): warning: In file included from...
+../Lib/CMSIS/Device/StdPeriph_Driver/inc\STAR_gpio.h(186): warning: no newline at end of file [-Wnewline-eof]
+#endif /* __STAR_GPIO_H */
+                          ^
+../Lib/CMSIS/Device/StdPeriph_Driver/src/STAR_gpio.c(47): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+    if((GPIOx->DATA &(Bit_SET << GPIO_Pin_x)) == Bit_RESET)
+                    ~ ~~~~~~~~^~~~~~~~~~~~~
+../Lib/CMSIS/Device/StdPeriph_Driver/src/STAR_gpio.c(70): warning: unused variable 'gpioDatamask' [-Wunused-variable]
+    uint32_t gpioDatamask = 0x00;
+             ^
+../Lib/CMSIS/Device/StdPeriph_Driver/src/STAR_gpio.c(119): warning: unused variable 'gpioDatamask' [-Wunused-variable]
+    uint32_t gpioDatamask = 0x00;
+             ^
+../Lib/CMSIS/Device/StdPeriph_Driver/src/STAR_gpio.c(180): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+        GPIOx->DATAOUT |= (Bit_SET << GPIO_Pin_x );
+                       ~~  ~~~~~~~~^~~~~~~~~~~~~
+../Lib/CMSIS/Device/StdPeriph_Driver/src/STAR_gpio.c(184): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+        GPIOx->DATAOUT &= (~(Bit_SET << GPIO_Pin_x ));
+                       ~~  ^~~~~~~~~~~~~~~~~~~~~~~~~
+../Lib/CMSIS/Device/StdPeriph_Driver/src/STAR_gpio.c(211): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+        GPIOx->DATA ^= (Bit_SET << GPIO_Pin_x );
+                    ~~  ~~~~~~~~^~~~~~~~~~~~~
+../Lib/CMSIS/Device/StdPeriph_Driver/src/STAR_gpio.c(199): warning: unused variable 'gpioDatamask' [-Wunused-variable]
+    uint32_t gpioDatamask = 0x00;
+             ^
+../Lib/CMSIS/Device/StdPeriph_Driver/src/STAR_gpio.c(294): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+         GPIOx->INTENSET  |= (Interrupt_ENABLE << GPIO_Pin_x);
+                          ~~  ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~
+../Lib/CMSIS/Device/StdPeriph_Driver/src/STAR_gpio.c(298): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                GPIOx->INTTYPECLR |= (Interrupt_ENABLE<< GPIO_Pin_x);
+                                  ~~  ~~~~~~~~~~~~~~~~^~~~~~~~~~~~~
+../Lib/CMSIS/Device/StdPeriph_Driver/src/STAR_gpio.c(299): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                GPIOx->INTPOLCLR |= (Interrupt_ENABLE << GPIO_Pin_x);
+                                 ~~  ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~
+../Lib/CMSIS/Device/StdPeriph_Driver/src/STAR_gpio.c(302): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                GPIOx->INTTYPECLR |= (Interrupt_ENABLE << GPIO_Pin_x);
+                                  ~~  ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~
+../Lib/CMSIS/Device/StdPeriph_Driver/src/STAR_gpio.c(303): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                GPIOx->INTPOLSET |= (Interrupt_ENABLE << GPIO_Pin_x);
+                                 ~~  ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~
+../Lib/CMSIS/Device/StdPeriph_Driver/src/STAR_gpio.c(306): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                GPIOx->INTTYPESET |= (Interrupt_ENABLE << GPIO_Pin_x);
+                                  ~~  ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~
+../Lib/CMSIS/Device/StdPeriph_Driver/src/STAR_gpio.c(307): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                GPIOx->INTPOLCLR |= (Interrupt_ENABLE << GPIO_Pin_x);
+                                 ~~  ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~
+../Lib/CMSIS/Device/StdPeriph_Driver/src/STAR_gpio.c(310): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                GPIOx->INTTYPESET |= (Interrupt_ENABLE << GPIO_Pin_x);
+                                  ~~  ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~
+../Lib/CMSIS/Device/StdPeriph_Driver/src/STAR_gpio.c(311): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                GPIOx->INTPOLSET |= (Interrupt_ENABLE << GPIO_Pin_x);
+                                 ~~  ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~
+20 warnings generated.
+compiling STAR_gpio.c...
+../Lib/BSP/gpio_interrupt.c(1): warning: In file included from...
+../Lib/CMSIS/Device/Include\STAR.h(178): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+../Lib/CMSIS/Device/Include\STAR.h(196): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+../Lib/CMSIS/Device/Include\STAR.h(218): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+../Lib/BSP/gpio_interrupt.c(2): warning: In file included from...
+../Lib/CMSIS/Device/StdPeriph_Driver/inc\STAR_gpio.h(186): warning: no newline at end of file [-Wnewline-eof]
+#endif /* __STAR_GPIO_H */
+                          ^
+../Lib/BSP/gpio_interrupt.c(7): warning: no previous prototype for function 'gpio4_interrupt_init' [-Wmissing-prototypes]
+void gpio4_interrupt_init(void)
+     ^
+../Lib/BSP/gpio_interrupt.c(7): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void gpio4_interrupt_init(void)
+^
+static 
+../Lib/BSP/gpio_interrupt.c(16): warning: no previous prototype for function 'PORT0_4_Handler' [-Wmissing-prototypes]
+void PORT0_4_Handler(void)
+     ^
+../Lib/BSP/gpio_interrupt.c(16): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void PORT0_4_Handler(void)
+^
+static 
+6 warnings generated.
+compiling gpio_interrupt.c...
+../Lib/BSP/Dualtimer.c(1): warning: In file included from...
+../Lib/CMSIS/Device/StdPeriph_Driver/inc\STAR_dualtimer.h(9): warning: In file included from...
+../Lib/CMSIS/Device/Include\STAR.h(178): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+../Lib/CMSIS/Device/Include\STAR.h(196): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+../Lib/CMSIS/Device/Include\STAR.h(218): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+../Lib/BSP/Dualtimer.c(5): warning: In file included from...
+../Lib/CMSIS/Device/StdPeriph_Driver/inc\STAR_gpio.h(186): warning: no newline at end of file [-Wnewline-eof]
+#endif /* __STAR_GPIO_H */
+                          ^
+../Lib/BSP/Dualtimer.c(84): warning: no previous prototype for function 'DUALTIMER0_Handler' [-Wmissing-prototypes]
+void DUALTIMER0_Handler(void)
+     ^
+../Lib/BSP/Dualtimer.c(84): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void DUALTIMER0_Handler(void)
+^
+static 
+../Lib/BSP/Dualtimer.c(104): warning: no previous prototype for function 'DUALTIMER1_Handler' [-Wmissing-prototypes]
+void DUALTIMER1_Handler(void)
+     ^
+../Lib/BSP/Dualtimer.c(104): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void DUALTIMER1_Handler(void)
+^
+static 
+6 warnings generated.
+compiling Dualtimer.c...
+../Lib/BSP/watchdog.c(1): warning: In file included from...
+../Lib/CMSIS/Device/StdPeriph_Driver/inc\STAR_gpio.h(9): warning: In file included from...
+../Lib/CMSIS/Device/Include\STAR.h(178): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+../Lib/CMSIS/Device/Include\STAR.h(196): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+../Lib/CMSIS/Device/Include\STAR.h(218): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+../Lib/BSP/watchdog.c(1): warning: In file included from...
+../Lib/CMSIS/Device/StdPeriph_Driver/inc\STAR_gpio.h(186): warning: no newline at end of file [-Wnewline-eof]
+#endif /* __STAR_GPIO_H */
+                          ^
+../Lib/BSP/watchdog.c(32): warning: no previous prototype for function 'NMI_Handler' [-Wmissing-prototypes]
+void NMI_Handler(void)
+     ^
+../Lib/BSP/watchdog.c(32): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void NMI_Handler(void)
+^
+static 
+../Lib/BSP/watchdog.c(42): warning: no previous prototype for function 'watchdog_feed' [-Wmissing-prototypes]
+void watchdog_feed(uint32_t reload)
+     ^
+../Lib/BSP/watchdog.c(42): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void watchdog_feed(uint32_t reload)
+^
+static 
+6 warnings generated.
+compiling watchdog.c...
+../Lib/CMSIS/Device/StdPeriph_Driver/src/STAR_dma.c(1): warning: In file included from...
+../Lib/CMSIS/Device/StdPeriph_Driver/inc\STAR_rcc.h(9): warning: In file included from...
+../Lib/CMSIS/Device/Include\STAR.h(178): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+../Lib/CMSIS/Device/Include\STAR.h(196): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+../Lib/CMSIS/Device/Include\STAR.h(218): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+../Lib/CMSIS/Device/StdPeriph_Driver/src/STAR_dma.c(2): warning: In file included from...
+../Lib/CMSIS/Device/StdPeriph_Driver/inc\STAR_gpio.h(186): warning: no newline at end of file [-Wnewline-eof]
+#endif /* __STAR_GPIO_H */
+                          ^
+../Lib/CMSIS/Device/StdPeriph_Driver/src/STAR_dma.c(161): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+        DMAx->DMACConfiguration|=(M<<1)|(E<<0);
+                               ~~~~~~~~^~~~~~~
+../Lib/CMSIS/Device/StdPeriph_Driver/src/STAR_dma.c(264): warning: signed shift result (0x80000000) sets the sign bit of the shift expression's type ('int') and becomes negative [-Wshift-sign-overflow]
+                DMAx->DMACC0Control &= ~((0x01<<31)|(0x01<<27)|(0x01<<26));
+                                          ~~~~^ ~~
+../Lib/CMSIS/Device/StdPeriph_Driver/src/STAR_dma.c(265): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                DMAx->DMACC0Control |= (I<<31)|(DI<<27)|(SI<<26);
+                                    ~~ ~~~~~~~~~~~~~~~~^~~~~~~~~
+../Lib/CMSIS/Device/StdPeriph_Driver/src/STAR_dma.c(269): warning: signed shift result (0x80000000) sets the sign bit of the shift expression's type ('int') and becomes negative [-Wshift-sign-overflow]
+                DMAx->DMACC1Control &= ~((0x01<<31)|(0x01<<27)|(0x01<<26));
+                                          ~~~~^ ~~
+../Lib/CMSIS/Device/StdPeriph_Driver/src/STAR_dma.c(270): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                DMAx->DMACC1Control |= (I<<31)|(DI<<27)|(SI<<26);
+                                    ~~ ~~~~~~~~~~~~~~~~^~~~~~~~~
+../Lib/CMSIS/Device/StdPeriph_Driver/src/STAR_dma.c(294): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                DMAx->DMACC0Control &= ~((0x7<<21)|(0x07<<18));
+                                    ~~ ^~~~~~~~~~~~~~~~~~~~~~~
+../Lib/CMSIS/Device/StdPeriph_Driver/src/STAR_dma.c(295): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                DMAx->DMACC0Control |= ((DW<<21)|(SW<<18));
+                                    ~~  ~~~~~~~~^~~~~~~~~
+../Lib/CMSIS/Device/StdPeriph_Driver/src/STAR_dma.c(299): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                DMAx->DMACC1Control &= ~((0x7<<21)|(0x07<<18));
+                                    ~~ ^~~~~~~~~~~~~~~~~~~~~~~
+../Lib/CMSIS/Device/StdPeriph_Driver/src/STAR_dma.c(300): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                DMAx->DMACC1Control |= ((DW<<21)|(SW<<18));
+                                    ~~  ~~~~~~~~^~~~~~~~~
+../Lib/CMSIS/Device/StdPeriph_Driver/src/STAR_dma.c(328): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                DMAx->DMACC0Control |= (DB<<15)|(SB<<12)|(Tx_Size<<0);
+                                    ~~ ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~
+../Lib/CMSIS/Device/StdPeriph_Driver/src/STAR_dma.c(333): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                DMAx->DMACC1Control |= (DB<<15)|(SB<<12)|(Tx_Size<<0);
+                                    ~~ ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~
+../Lib/CMSIS/Device/StdPeriph_Driver/src/STAR_dma.c(360): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                DMAx->DMACC0Configuration &= ~((0x01<<18)|(0x01<<16)|(0x01<<15)|(0x01<<14));
+                                          ~~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Lib/CMSIS/Device/StdPeriph_Driver/src/STAR_dma.c(361): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                DMAx->DMACC0Configuration |= (Halt<<18)|(Lock<<16)|(ITC<<15)|(IE<<14);
+                                          ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+../Lib/CMSIS/Device/StdPeriph_Driver/src/STAR_dma.c(365): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                DMAx->DMACC1Configuration &= ~((0x01<<18)|(0x01<<16)|(0x01<<15)|(0x01<<14));
+                                          ~~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Lib/CMSIS/Device/StdPeriph_Driver/src/STAR_dma.c(366): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                DMAx->DMACC1Configuration |= (Halt<<18)|(Lock<<16)|(ITC<<15)|(IE<<14);
+                                          ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+../Lib/CMSIS/Device/StdPeriph_Driver/src/STAR_dma.c(392): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                DMAx->DMACC0Configuration &= ~(0x07<<11);
+                                          ~~ ^~~~~~~~~~~
+../Lib/CMSIS/Device/StdPeriph_Driver/src/STAR_dma.c(393): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                DMAx->DMACC0Configuration |= (Flow_Control<<11);
+                                          ~~  ~~~~~~~~~~~~^~~~
+../Lib/CMSIS/Device/StdPeriph_Driver/src/STAR_dma.c(397): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                DMAx->DMACC1Configuration &= ~(0x07<<11);
+                                          ~~ ^~~~~~~~~~~
+../Lib/CMSIS/Device/StdPeriph_Driver/src/STAR_dma.c(398): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                DMAx->DMACC1Configuration |= (Flow_Control<<11);
+                                          ~~  ~~~~~~~~~~~~^~~~
+../Lib/CMSIS/Device/StdPeriph_Driver/src/STAR_dma.c(421): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                DMAx->DMACC0Configuration &= ~((0x0f<<6)|(0x0f<<1)|(0x01<<0));
+                                          ~~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Lib/CMSIS/Device/StdPeriph_Driver/src/STAR_dma.c(422): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                DMAx->DMACC0Configuration |= (DestPeri<<6)|(SrcPeri<<1)|(EN<<0);
+                                          ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+../Lib/CMSIS/Device/StdPeriph_Driver/src/STAR_dma.c(426): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                DMAx->DMACC1Configuration &= ~((0x0f<<6)|(0x0f<<1)|(0x01<<0));
+                                          ~~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Lib/CMSIS/Device/StdPeriph_Driver/src/STAR_dma.c(427): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                DMAx->DMACC1Configuration |= (DestPeri<<6)|(SrcPeri<<1)|(EN<<0);
+                                          ~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+27 warnings generated.
+compiling STAR_dma.c...
+../Lib/BSP/extint.c(1): warning: In file included from...
+../Lib/CMSIS/Device/StdPeriph_Driver/inc\STAR_gpio.h(9): warning: In file included from...
+../Lib/CMSIS/Device/Include\STAR.h(178): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+../Lib/CMSIS/Device/Include\STAR.h(196): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+../Lib/CMSIS/Device/Include\STAR.h(218): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+../Lib/BSP/extint.c(1): warning: In file included from...
+../Lib/CMSIS/Device/StdPeriph_Driver/inc\STAR_gpio.h(186): warning: no newline at end of file [-Wnewline-eof]
+#endif /* __STAR_GPIO_H */
+                          ^
+../Lib/BSP/extint.c(43): warning: no previous prototype for function 'EXT0_Handler' [-Wmissing-prototypes]
+void EXT0_Handler(void)
+     ^
+../Lib/BSP/extint.c(43): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void EXT0_Handler(void)
+^
+static 
+../Lib/BSP/extint.c(52): warning: no previous prototype for function 'EXT15_Handler' [-Wmissing-prototypes]
+void EXT15_Handler(void)
+     ^
+../Lib/BSP/extint.c(52): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void EXT15_Handler(void)
+^
+static 
+6 warnings generated.
+compiling extint.c...
+../Lib/BSP/misc.c(1): warning: In file included from...
+../Lib/BSP/misc.h(8): warning: In file included from...
+../Lib/CMSIS/Device/Include\STAR.h(178): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+../Lib/CMSIS/Device/Include\STAR.h(196): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+../Lib/CMSIS/Device/Include\STAR.h(218): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+../Lib/BSP/misc.c(65): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+    NVIC->IPR[NVIC_InitStruct->NVIC_IRQChannel] = tmppriority;
+                                                ~ ^~~~~~~~~~~
+4 warnings generated.
+compiling misc.c...
+../Lib/CMSIS/Device/Source/system_ARMCM33.c(40): warning: In file included from...
+../Lib/CMSIS/Device/Source/star_mpu.h(60): warning: this function declaration is not a prototype [-Wstrict-prototypes]
+void mpu_enable();
+               ^
+                void
+../Lib/CMSIS/Device/Source/system_ARMCM33.c(70): warning: no previous extern declaration for non-static variable 'PCLK_DIV' [-Wmissing-variable-declarations]
+uint8_t PCLK_DIV = 1; //PCLK_DIV = 2^(MC1_PCLK_DIV); FPGA工程中MC1_PCLK_DIV设置为0；
+        ^
+../Lib/CMSIS/Device/Source/system_ARMCM33.c(70): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+uint8_t PCLK_DIV = 1; //PCLK_DIV = 2^(MC1_PCLK_DIV); FPGA工程中MC1_PCLK_DIV设置为0；
+^
+2 warnings generated.
+compiling system_ARMCM33.c...
+assembling startup_ARMCM33.s...
+../Lib/CMSIS/Device/StdPeriph_Driver/src/STAR_timer.c(1): warning: In file included from...
+../Lib/CMSIS/Device/StdPeriph_Driver/inc\STAR_timer.h(9): warning: In file included from...
+../Lib/CMSIS/Device/Include\STAR.h(178): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+../Lib/CMSIS/Device/Include\STAR.h(196): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+../Lib/CMSIS/Device/Include\STAR.h(218): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+../Lib/CMSIS/Device/StdPeriph_Driver/src/STAR_timer.c(103): warning: & has lower precedence than !=; != will be evaluated first [-Wparentheses]
+    if (itstatus&0x0 != (uint16_t) RESET)
+                ^~~~~~~~~~~~~~~~~~~~~~~~
+../Lib/CMSIS/Device/StdPeriph_Driver/src/STAR_timer.c(103): note: place parentheses around the '!=' expression to silence this warning
+    if (itstatus&0x0 != (uint16_t) RESET)
+                ^
+                 (                      )
+../Lib/CMSIS/Device/StdPeriph_Driver/src/STAR_timer.c(103): note: place parentheses around the & expression to evaluate it first
+    if (itstatus&0x0 != (uint16_t) RESET)
+                ^
+        (           )
+../Lib/CMSIS/Device/StdPeriph_Driver/src/STAR_timer.c(105): warning: code will never be executed [-Wunreachable-code]
+                bitstatus = SET; 
+                            ^~~
+5 warnings generated.
+compiling STAR_timer.c...
+../Lib/CMSIS/Device/StdPeriph_Driver/src/STAR_watchdog.c(1): warning: In file included from...
+../Lib/CMSIS/Device/StdPeriph_Driver/inc\STAR_gpio.h(9): warning: In file included from...
+../Lib/CMSIS/Device/Include\STAR.h(178): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+../Lib/CMSIS/Device/Include\STAR.h(196): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+../Lib/CMSIS/Device/Include\STAR.h(218): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+../Lib/CMSIS/Device/StdPeriph_Driver/src/STAR_watchdog.c(1): warning: In file included from...
+../Lib/CMSIS/Device/StdPeriph_Driver/inc\STAR_gpio.h(186): warning: no newline at end of file [-Wnewline-eof]
+#endif /* __STAR_GPIO_H */
+                          ^
+../Lib/CMSIS/Device/StdPeriph_Driver/src/STAR_watchdog.c(70): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+        WATCHDOGx->WDOGCONTROL = (resen<<1) | (inten<<0);
+                               ~ ~~~~~~~~~~~^~~~~~~~~~~~
+5 warnings generated.
+compiling STAR_watchdog.c...
+../Lib/CMSIS/Device/StdPeriph_Driver/src/STAR_dualtimer.c(1): warning: In file included from...
+../Lib/CMSIS/Device/StdPeriph_Driver/inc\STAR_dualtimer.h(9): warning: In file included from...
+../Lib/CMSIS/Device/Include\STAR.h(178): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+../Lib/CMSIS/Device/Include\STAR.h(196): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+../Lib/CMSIS/Device/Include\STAR.h(218): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+../Lib/CMSIS/Device/StdPeriph_Driver/src/STAR_dualtimer.c(245): warning: variable 'value' is used uninitialized whenever 'if' condition is false [-Wsometimes-uninitialized]
+        else if(DTIM == DTIM_DUALTIMERx_2)
+                ^~~~~~~~~~~~~~~~~~~~~~~~~
+../Lib/CMSIS/Device/StdPeriph_Driver/src/STAR_dualtimer.c(249): note: uninitialized use occurs here
+        return value;
+               ^~~~~
+../Lib/CMSIS/Device/StdPeriph_Driver/src/STAR_dualtimer.c(245): note: remove the 'if' if its condition is always true
+        else if(DTIM == DTIM_DUALTIMERx_2)
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Lib/CMSIS/Device/StdPeriph_Driver/src/STAR_dualtimer.c(237): note: initialize the variable 'value' to silence this warning
+        uint32_t value;
+                      ^
+                       = 0
+../Lib/CMSIS/Device/StdPeriph_Driver/src/STAR_dualtimer.c(271): warning: variable 'RIS' is used uninitialized whenever 'if' condition is false [-Wsometimes-uninitialized]
+        else if (DTIM == DTIM_DUALTIMERx_2)
+                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+../Lib/CMSIS/Device/StdPeriph_Driver/src/STAR_dualtimer.c(275): note: uninitialized use occurs here
+        return RIS;
+               ^~~
+../Lib/CMSIS/Device/StdPeriph_Driver/src/STAR_dualtimer.c(271): note: remove the 'if' if its condition is always true
+        else if (DTIM == DTIM_DUALTIMERx_2)
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Lib/CMSIS/Device/StdPeriph_Driver/src/STAR_dualtimer.c(263): note: initialize the variable 'RIS' to silence this warning
+        uint32_t RIS;
+                    ^
+                     = 0
+../Lib/CMSIS/Device/StdPeriph_Driver/src/STAR_dualtimer.c(298): warning: variable 'MIS' is used uninitialized whenever 'if' condition is false [-Wsometimes-uninitialized]
+        else if (DTIM == DTIM_DUALTIMERx_2)
+                 ^~~~~~~~~~~~~~~~~~~~~~~~~
+../Lib/CMSIS/Device/StdPeriph_Driver/src/STAR_dualtimer.c(302): note: uninitialized use occurs here
+        return MIS;
+               ^~~
+../Lib/CMSIS/Device/StdPeriph_Driver/src/STAR_dualtimer.c(298): note: remove the 'if' if its condition is always true
+        else if (DTIM == DTIM_DUALTIMERx_2)
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Lib/CMSIS/Device/StdPeriph_Driver/src/STAR_dualtimer.c(289): note: initialize the variable 'MIS' to silence this warning
+        uint32_t MIS;
+                    ^
+                     = 0
+6 warnings generated.
+compiling STAR_dualtimer.c...
+../Lib/CMSIS/Device/StdPeriph_Driver/src/STAR_uart.c(1): warning: In file included from...
+../Lib/CMSIS/Device/StdPeriph_Driver/inc\STAR_uart.h(10): warning: In file included from...
+../Lib/CMSIS/Device/Include\STAR.h(178): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+../Lib/CMSIS/Device/Include\STAR.h(196): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+../Lib/CMSIS/Device/Include\STAR.h(218): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+../Lib/CMSIS/Device/StdPeriph_Driver/src/STAR_uart.c(1): warning: In file included from...
+../Lib/CMSIS/Device/StdPeriph_Driver/inc\STAR_uart.h(27): warning: padding size of 'UART_InitTypeDef' with 1 byte to alignment boundary [-Wpadded]
+typedef struct
+        ^
+4 warnings generated.
+compiling STAR_uart.c...
+../Lib/CMSIS/Device/StdPeriph_Driver/src/STAR_adc.c(1): warning: In file included from...
+../Lib/CMSIS/Device/StdPeriph_Driver/inc\STAR_adc.h(10): warning: In file included from...
+../Lib/CMSIS/Device/Include\STAR.h(178): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+../Lib/CMSIS/Device/Include\STAR.h(196): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+../Lib/CMSIS/Device/Include\STAR.h(218): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+../Lib/CMSIS/Device/StdPeriph_Driver/src/STAR_adc.c(58): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+                                                                                                                         |((ADC_InitStruct->ADC_PDn)<<5)        ;
+                                                                                                                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Lib/CMSIS/Device/StdPeriph_Driver/src/STAR_adc.c(62): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+                                                                                                                                |((ADC_InitStruct->Converter_adon)<<0);
+                                                                                                                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Lib/CMSIS/Device/StdPeriph_Driver/src/STAR_adc.c(66): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+                                                                        |(( ADC_InitStruct->Data_align)<<3)|(( ADC_InitStruct->ScanConvMode)<<1)); 
+                                                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Lib/CMSIS/Device/StdPeriph_Driver/src/STAR_adc.c(98): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+        ADCx->ADC_CR_1 &= ~(1<<0);//ADON Write 0
+                       ~~ ^~~~~~~
+../Lib/CMSIS/Device/StdPeriph_Driver/src/STAR_adc.c(122): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                ADCx->ADC_CSR_0 &= ~(0x1<<1);
+                                ~~ ^~~~~~~~~
+../Lib/CMSIS/Device/StdPeriph_Driver/src/STAR_adc.c(192): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+        temp &= ~(0x03<<4);
+             ~~ ^~~~~~~~~~
+../Lib/CMSIS/Device/StdPeriph_Driver/src/STAR_adc.c(210): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+        ADCx->ADC_CSR_0 &= ~(1<<0);
+                        ~~ ^~~~~~~
+../Lib/CMSIS/Device/StdPeriph_Driver/src/STAR_adc.c(226): warning: use of logical '&&' with constant operand [-Wconstant-logical-operand]
+        state =(ADCx->ADC_CSR_1 &&0x100);
+                                ^ ~~~~~
+../Lib/CMSIS/Device/StdPeriph_Driver/src/STAR_adc.c(226): note: use '&' for a bitwise operation
+        state =(ADCx->ADC_CSR_1 &&0x100);
+                                ^~~~~~~
+                                &
+../Lib/CMSIS/Device/StdPeriph_Driver/src/STAR_adc.c(226): note: remove constant to silence this warning
+        state =(ADCx->ADC_CSR_1 &&0x100);
+                               ~^~~~~~~
+../Lib/CMSIS/Device/StdPeriph_Driver/src/STAR_adc.c(251): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                ADCx->ADC_CSR_1 &= ~(0x01<<5);
+                                ~~ ^~~~~~~~~~
+../Lib/CMSIS/Device/StdPeriph_Driver/src/STAR_adc.c(253): warning: non-void function does not return a value [-Wreturn-type]
+}
+^
+../Lib/CMSIS/Device/StdPeriph_Driver/src/STAR_adc.c(263): warning: unused parameter 'ADCx' [-Wunused-parameter]
+uint8_t ADC_Get_DataBufferEnable_State(ADC_TypeDef* ADCx)
+                                                    ^
+14 warnings generated.
+compiling STAR_adc.c...
+../Lib/CMSIS/Device/StdPeriph_Driver/src/STAR_spi.c(1): warning: In file included from...
+../Lib/CMSIS/Device/StdPeriph_Driver/inc\STAR_rcc.h(9): warning: In file included from...
+../Lib/CMSIS/Device/Include\STAR.h(178): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+../Lib/CMSIS/Device/Include\STAR.h(196): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+../Lib/CMSIS/Device/Include\STAR.h(218): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+../Lib/CMSIS/Device/StdPeriph_Driver/src/STAR_spi.c(4): warning: In file included from...
+../Lib/CMSIS/Device/StdPeriph_Driver/inc\STAR_gpio.h(186): warning: no newline at end of file [-Wnewline-eof]
+#endif /* __STAR_GPIO_H */
+                          ^
+../Lib/CMSIS/Device/StdPeriph_Driver/src/STAR_spi.c(189): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+        SSPx->SSPDMACR |= ((TX_EN << 1)|(RX_EN << 0));
+                       ~~  ~~~~~~~~~~~~^~~~~~~~~~~~~
+../Lib/CMSIS/Device/StdPeriph_Driver/src/STAR_spi.c(204): warning: implicit conversion loses integer precision: 'volatile uint32_t' (aka 'volatile unsigned int') to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+        return SSPx->SSPDR;
+        ~~~~~~ ~~~~~~^~~~~
+../Lib/CMSIS/Device/StdPeriph_Driver/src/STAR_spi.c(220): warning: implicit conversion loses integer precision: 'const volatile uint32_t' (aka 'const volatile unsigned int') to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+        return SSPx->SSPSR;
+        ~~~~~~ ~~~~~~^~~~~
+../Lib/CMSIS/Device/StdPeriph_Driver/src/STAR_spi.c(236): warning: implicit conversion loses integer precision: 'const volatile uint32_t' (aka 'const volatile unsigned int') to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+        return SSPx->SSPRIS;
+        ~~~~~~ ~~~~~~^~~~~~
+../Lib/CMSIS/Device/StdPeriph_Driver/src/STAR_spi.c(252): warning: implicit conversion loses integer precision: 'const volatile uint32_t' (aka 'const volatile unsigned int') to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+        return SSPx->SSPMIS;
+        ~~~~~~ ~~~~~~^~~~~~
+../Lib/CMSIS/Device/StdPeriph_Driver/src/STAR_spi.c(377): warning: no previous prototype for function 'SSP_RX_FIFO_Is_Empty' [-Wmissing-prototypes]
+uint8_t SSP_RX_FIFO_Is_Empty(SSP_TypeDef* SSPx)
+        ^
+../Lib/CMSIS/Device/StdPeriph_Driver/src/STAR_spi.c(377): note: declare 'static' if the function is not intended to be used outside of this translation unit
+uint8_t SSP_RX_FIFO_Is_Empty(SSP_TypeDef* SSPx)
+^
+static 
+10 warnings generated.
+compiling STAR_spi.c...
+../Lib/CMSIS/Device/StdPeriph_Driver/src/STAR_retarget.c(2): warning: In file included from...
+../Lib/CMSIS/Device/StdPeriph_Driver/inc\STAR_rcc.h(9): warning: In file included from...
+../Lib/CMSIS/Device/Include\STAR.h(178): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+../Lib/CMSIS/Device/Include\STAR.h(196): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+../Lib/CMSIS/Device/Include\STAR.h(218): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+../Lib/CMSIS/Device/StdPeriph_Driver/src/STAR_retarget.c(4): warning: In file included from...
+../Lib/CMSIS/Device/StdPeriph_Driver/inc\STAR_gpio.h(186): warning: no newline at end of file [-Wnewline-eof]
+#endif /* __STAR_GPIO_H */
+                          ^
+../Lib/CMSIS/Device/StdPeriph_Driver/src/STAR_retarget.c(16): warning: implicit conversion loses integer precision: 'int' to 'unsigned char' [-Wimplicit-int-conversion]
+  return (UartPutc(ch));
+          ~~~~~~~~ ^~
+../Lib/CMSIS/Device/StdPeriph_Driver/src/STAR_retarget.c(15): warning: unused parameter 'f' [-Wunused-parameter]
+int fputc(int ch, FILE *f) {
+                        ^
+../Lib/CMSIS/Device/StdPeriph_Driver/src/STAR_retarget.c(18): warning: unused parameter 'f' [-Wunused-parameter]
+int fgetc(FILE *f) {
+                ^
+7 warnings generated.
+compiling STAR_retarget.c...
+../Lib/BSP/dma.c(1): warning: In file included from...
+../Lib/CMSIS/Device/StdPeriph_Driver/inc\STAR_rcc.h(9): warning: In file included from...
+../Lib/CMSIS/Device/Include\STAR.h(178): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+../Lib/CMSIS/Device/Include\STAR.h(196): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+../Lib/CMSIS/Device/Include\STAR.h(218): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+../Lib/BSP/dma.c(2): warning: In file included from...
+../Lib/CMSIS/Device/StdPeriph_Driver/inc\STAR_gpio.h(186): warning: no newline at end of file [-Wnewline-eof]
+#endif /* __STAR_GPIO_H */
+                          ^
+../Lib/BSP/dma.c(35): warning: no previous prototype for function 'DMA_Test_MtoM' [-Wmissing-prototypes]
+void DMA_Test_MtoM(void)
+     ^
+../Lib/BSP/dma.c(35): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void DMA_Test_MtoM(void)
+^
+static 
+../Lib/BSP/dma.c(137): warning: no previous prototype for function 'DMA_SPI_Test_PtoM' [-Wmissing-prototypes]
+void DMA_SPI_Test_PtoM(void)
+     ^
+../Lib/BSP/dma.c(137): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void DMA_SPI_Test_PtoM(void)
+^
+static 
+../Lib/BSP/dma.c(267): warning: implicit conversion loses integer precision: 'uint16_t' (aka 'unsigned short') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+                rx_data_spi[m] = SSP_ReceiveData(STAR_SSP0);
+                               ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../Lib/BSP/dma.c(227): warning: no previous prototype for function 'DMA_SPI_Test_MtoP' [-Wmissing-prototypes]
+void DMA_SPI_Test_MtoP(void)
+     ^
+../Lib/BSP/dma.c(227): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void DMA_SPI_Test_MtoP(void)
+^
+static 
+8 warnings generated.
+compiling dma.c...
+../Lib/CMSIS/Device/StdPeriph_Driver/src/STAR_i2c.c(1): warning: In file included from...
+../Lib/CMSIS/Device/StdPeriph_Driver/inc\STAR_i2c.h(9): warning: In file included from...
+../Lib/CMSIS/Device/Include\STAR.h(178): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+../Lib/CMSIS/Device/Include\STAR.h(196): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+../Lib/CMSIS/Device/Include\STAR.h(218): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+../Lib/CMSIS/Device/StdPeriph_Driver/src/STAR_i2c.c(3): warning: In file included from...
+../Lib/CMSIS/Device/StdPeriph_Driver/inc\STAR_gpio.h(186): warning: no newline at end of file [-Wnewline-eof]
+#endif /* __STAR_GPIO_H */
+                          ^
+../Lib/CMSIS/Device/StdPeriph_Driver/src/STAR_i2c.c(95): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                I2Cx->CONTROL &= ~(1<<STAR_I2C_START_SET_Pos);
+                              ~~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Lib/CMSIS/Device/StdPeriph_Driver/src/STAR_i2c.c(120): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                I2Cx->CONTROL &= ~(1<<STAR_I2C_TX_ENA_Pos);
+                              ~~ ^~~~~~~~~~~~~~~~~~~~~~~~~
+../Lib/CMSIS/Device/StdPeriph_Driver/src/STAR_i2c.c(110): warning: unused variable 'Ctrl_Read' [-Wunused-variable]
+        uint32_t Ctrl_Read;
+                 ^
+../Lib/CMSIS/Device/StdPeriph_Driver/src/STAR_i2c.c(144): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                I2Cx->CONTROL &= ~(1 << STAR_I2C_RX_ENA_Pos);
+                              ~~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Lib/CMSIS/Device/StdPeriph_Driver/src/STAR_i2c.c(169): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+        I2Cx->CONTROL &= ~(1 << STAR_I2C_STOP_SET_Pos);
+                      ~~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Lib/CMSIS/Device/StdPeriph_Driver/src/STAR_i2c.c(222): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                I2Cx->CONTROL &= ~(0x03<<STAR_I2C_TX_BUFFER_LEVEL_Pos);
+                              ~~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Lib/CMSIS/Device/StdPeriph_Driver/src/STAR_i2c.c(223): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                I2Cx->CONTROL  |= (TxbufferWlevel<<STAR_I2C_TX_BUFFER_LEVEL_Pos);
+                               ~~  ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Lib/CMSIS/Device/StdPeriph_Driver/src/STAR_i2c.c(245): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                I2Cx->CONTROL &= ~(0x03<<STAR_I2C_RX_BUFFER_LEVEL_Pos);
+                              ~~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Lib/CMSIS/Device/StdPeriph_Driver/src/STAR_i2c.c(246): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                I2Cx->CONTROL |= ( RxbufferWlevel << STAR_I2C_RX_BUFFER_LEVEL_Pos);
+                              ~~   ~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Lib/CMSIS/Device/StdPeriph_Driver/src/STAR_i2c.c(264): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+        I2Cx->CONTROL &= ~(0x0f <<STAR_I2C_TX_NUM_Pos);
+                      ~~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Lib/CMSIS/Device/StdPeriph_Driver/src/STAR_i2c.c(265): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+        I2Cx->CONTROL |= ( Num << STAR_I2C_TX_NUM_Pos );
+                      ~~   ~~~~^~~~~~~~~~~~~~~~~~~~~~
+../Lib/CMSIS/Device/StdPeriph_Driver/src/STAR_i2c.c(528): warning: signed shift result (0x80000000) sets the sign bit of the shift expression's type ('int') and becomes negative [-Wshift-sign-overflow]
+                I2Cx->CONTROL |= (1<<STAR_I2C_SWRST_Pos);
+                                  ~^ ~~~~~~~~~~~~~~~~~~
+../Lib/CMSIS/Device/StdPeriph_Driver/src/STAR_i2c.c(528): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                I2Cx->CONTROL |= (1<<STAR_I2C_SWRST_Pos);
+                              ~~  ~^~~~~~~~~~~~~~~~~~~~
+../Lib/CMSIS/Device/StdPeriph_Driver/src/STAR_i2c.c(532): warning: signed shift result (0x80000000) sets the sign bit of the shift expression's type ('int') and becomes negative [-Wshift-sign-overflow]
+                I2Cx->CONTROL &= ~(1<<STAR_I2C_SWRST_Pos);
+                                   ~^ ~~~~~~~~~~~~~~~~~~
+18 warnings generated.
+compiling STAR_i2c.c...
+../User/main.c(3): warning: In file included from...
+../Lib/CMSIS/Device/Include\STAR.h(178): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+../Lib/CMSIS/Device/Include\STAR.h(196): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+../Lib/CMSIS/Device/Include\STAR.h(218): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+../User/main.c(4): warning: In file included from...
+../Lib/CMSIS/Device/StdPeriph_Driver/inc\STAR_gpio.h(186): warning: no newline at end of file [-Wnewline-eof]
+#endif /* __STAR_GPIO_H */
+                          ^
+../User/main.c(10): warning: no previous extern declaration for non-static variable 'GNSS_Data' [-Wmissing-variable-declarations]
+uint32_t GNSS_Data[GNSS_DATA_LENGTH] = {0}; // 从RAM读出的GNSS的数据
+         ^
+../User/main.c(10): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+uint32_t GNSS_Data[GNSS_DATA_LENGTH] = {0}; // 从RAM读出的GNSS的数据
+^
+../User/main.c(12): warning: no previous prototype for function 'delay_ms' [-Wmissing-prototypes]
+void delay_ms(uint16_t dly)
+     ^
+../User/main.c(12): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void delay_ms(uint16_t dly)
+^
+static 
+6 warnings generated.
+compiling main.c...
+../Lib/BSP/W5500.c(1): warning: In file included from...
+../Lib/CMSIS/Device/StdPeriph_Driver/inc\STAR_spi.h(9): warning: In file included from...
+../Lib/CMSIS/Device/Include\STAR.h(178): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+../Lib/CMSIS/Device/Include\STAR.h(196): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+../Lib/CMSIS/Device/Include\STAR.h(218): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+../Lib/BSP/W5500.c(2): warning: In file included from...
+../Lib/BSP/W5500.h(5): warning: In file included from...
+../Lib/CMSIS/Device/StdPeriph_Driver/inc\STAR_gpio.h(186): warning: no newline at end of file [-Wnewline-eof]
+#endif /* __STAR_GPIO_H */
+                          ^
+../Lib/BSP/W5500.c(2): warning: In file included from...
+../Lib/BSP/W5500.h(9): warning: In file included from...
+../Lib/BSP/io_spi.h(13): warning: this function declaration is not a prototype [-Wstrict-prototypes]
+void SPI_GPIO_Init();
+                  ^
+                   void
+../Lib/BSP/io_spi.h(19): warning: no newline at end of file [-Wnewline-eof]
+#endif
+      ^
+../Lib/BSP/W5500.c(41): warning: no previous prototype for function 'W5500_CS' [-Wmissing-prototypes]
+unsigned char W5500_CS(unsigned char i)
+              ^
+../Lib/BSP/W5500.c(41): note: declare 'static' if the function is not intended to be used outside of this translation unit
+unsigned char W5500_CS(unsigned char i)
+^
+static 
+../Lib/BSP/W5500.c(44): warning: non-void function does not return a value [-Wreturn-type]
+}
+^
+../Lib/BSP/W5500.c(92): warning: implicit conversion loses integer precision: 'uint16_t' (aka 'unsigned short') to 'unsigned char' [-Wimplicit-int-conversion]
+        rByte = SSP_ReceiveData(STAR_SSP1);
+              ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../Lib/BSP/W5500.c(87): warning: no previous prototype for function 'SPI_Read_Byte' [-Wmissing-prototypes]
+unsigned char SPI_Read_Byte(void) {
+              ^
+../Lib/BSP/W5500.c(87): note: declare 'static' if the function is not intended to be used outside of this translation unit
+unsigned char SPI_Read_Byte(void) {
+^
+static 
+../Lib/BSP/W5500.c(116): warning: implicit conversion loses integer precision: 'uint16_t' (aka 'unsigned short') to 'unsigned char' [-Wimplicit-int-conversion]
+        rByteH = SSP_ReceiveData(STAR_SSP1);
+               ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../Lib/BSP/W5500.c(118): warning: implicit conversion loses integer precision: 'uint16_t' (aka 'unsigned short') to 'unsigned char' [-Wimplicit-int-conversion]
+        rByteL = SSP_ReceiveData(STAR_SSP1);
+               ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../Lib/BSP/W5500.c(127): warning: implicit conversion loses integer precision: 'int' to 'unsigned short' [-Wimplicit-int-conversion]
+        return ((rByteH<<8) | rByteL);
+        ~~~~~~  ~~~~~~~~~~~~^~~~~~~~
+../Lib/BSP/W5500.c(110): warning: no previous prototype for function 'SPI_Read_2Byte' [-Wmissing-prototypes]
+unsigned short SPI_Read_2Byte(void) {
+               ^
+../Lib/BSP/W5500.c(110): note: declare 'static' if the function is not intended to be used outside of this translation unit
+unsigned short SPI_Read_2Byte(void) {
+^
+static 
+../Lib/BSP/W5500.c(145): warning: implicit conversion loses integer precision: 'uint16_t' (aka 'unsigned short') to 'unsigned char' [-Wimplicit-int-conversion]
+                j = SSP_ReceiveData(STAR_SSP1); //<B6><C1>ȡ1<B8><F6><D7>ֽ<DA><CA><FD><BE><DD>
+                  ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../Lib/BSP/W5500.c(170): warning: no previous prototype for function 'SPI_Send_Byte' [-Wmissing-prototypes]
+void SPI_Send_Byte(unsigned char dt) {
+     ^
+../Lib/BSP/W5500.c(170): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void SPI_Send_Byte(unsigned char dt) {
+^
+static 
+../Lib/BSP/W5500.c(191): warning: implicit conversion loses integer precision: 'unsigned short' to 'unsigned char' [-Wimplicit-int-conversion]
+        SPI_Send_Byte(dt); //д<CA><FD><BE>ݵ<CD>λ 
+        ~~~~~~~~~~~~~ ^~
+../Lib/BSP/W5500.c(188): warning: no previous prototype for function 'SPI_Send_Short' [-Wmissing-prototypes]
+void SPI_Send_Short(unsigned short dt) {
+     ^
+../Lib/BSP/W5500.c(188): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void SPI_Send_Short(unsigned short dt) {
+^
+static 
+../Lib/BSP/W5500.c(208): warning: no previous prototype for function 'Write_W5500_1Byte' [-Wmissing-prototypes]
+void Write_W5500_1Byte(unsigned short reg, unsigned char dat) {
+     ^
+../Lib/BSP/W5500.c(208): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void Write_W5500_1Byte(unsigned short reg, unsigned char dat) {
+^
+static 
+../Lib/BSP/W5500.c(231): warning: no previous prototype for function 'Write_W5500_2Byte' [-Wmissing-prototypes]
+void Write_W5500_2Byte(unsigned short reg, unsigned short dat) {
+     ^
+../Lib/BSP/W5500.c(231): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void Write_W5500_2Byte(unsigned short reg, unsigned short dat) {
+^
+static 
+../Lib/BSP/W5500.c(254): warning: no previous prototype for function 'Write_W5500_nByte' [-Wmissing-prototypes]
+void Write_W5500_nByte(unsigned short reg, unsigned char *dat_ptr,
+     ^
+../Lib/BSP/W5500.c(254): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void Write_W5500_nByte(unsigned short reg, unsigned char *dat_ptr,
+^
+static 
+../Lib/BSP/W5500.c(282): warning: no previous prototype for function 'Write_W5500_SOCK_1Byte' [-Wmissing-prototypes]
+void Write_W5500_SOCK_1Byte(SOCKET s, unsigned short reg, unsigned char dat) {
+     ^
+../Lib/BSP/W5500.c(282): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void Write_W5500_SOCK_1Byte(SOCKET s, unsigned short reg, unsigned char dat) {
+^
+static 
+../Lib/BSP/W5500.c(305): warning: no previous prototype for function 'Write_W5500_SOCK_2Byte' [-Wmissing-prototypes]
+void Write_W5500_SOCK_2Byte(SOCKET s, unsigned short reg, unsigned short dat) {
+     ^
+../Lib/BSP/W5500.c(305): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void Write_W5500_SOCK_2Byte(SOCKET s, unsigned short reg, unsigned short dat) {
+^
+static 
+../Lib/BSP/W5500.c(328): warning: no previous prototype for function 'Write_W5500_SOCK_4Byte' [-Wmissing-prototypes]
+void Write_W5500_SOCK_4Byte(SOCKET s, unsigned short reg,
+     ^
+../Lib/BSP/W5500.c(328): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void Write_W5500_SOCK_4Byte(SOCKET s, unsigned short reg,
+^
+static 
+../Lib/BSP/W5500.c(356): warning: no previous prototype for function 'Read_W5500_1Byte' [-Wmissing-prototypes]
+unsigned char Read_W5500_1Byte(unsigned short reg) {
+              ^
+../Lib/BSP/W5500.c(356): note: declare 'static' if the function is not intended to be used outside of this translation unit
+unsigned char Read_W5500_1Byte(unsigned short reg) {
+^
+static 
+../Lib/BSP/W5500.c(385): warning: no previous prototype for function 'Read_W5500_SOCK_1Byte' [-Wmissing-prototypes]
+unsigned char Read_W5500_SOCK_1Byte(SOCKET s, unsigned short reg) {
+              ^
+../Lib/BSP/W5500.c(385): note: declare 'static' if the function is not intended to be used outside of this translation unit
+unsigned char Read_W5500_SOCK_1Byte(SOCKET s, unsigned short reg) {
+^
+static 
+../Lib/BSP/W5500.c(414): warning: no previous prototype for function 'Read_W5500_SOCK_2Byte' [-Wmissing-prototypes]
+unsigned short Read_W5500_SOCK_2Byte(SOCKET s, unsigned short reg) {
+               ^
+../Lib/BSP/W5500.c(414): note: declare 'static' if the function is not intended to be used outside of this translation unit
+unsigned short Read_W5500_SOCK_2Byte(SOCKET s, unsigned short reg) {
+^
+static 
+../Lib/BSP/W5500.c(446): warning: unused variable 'i' [-Wunused-variable]
+        unsigned short i;
+                       ^
+../Lib/BSP/W5500.c(447): warning: unused variable 'j' [-Wunused-variable]
+        unsigned char j;
+                      ^
+../Lib/BSP/W5500.c(448): warning: unused variable 'cnt' [-Wunused-variable]
+        unsigned int cnt = rx_size;
+                     ^
+../Lib/BSP/W5500.c(448): warning: variable 'rx_size' is uninitialized when used here [-Wuninitialized]
+        unsigned int cnt = rx_size;
+                           ^~~~~~~
+../Lib/BSP/W5500.c(444): note: initialize the variable 'rx_size' to silence this warning
+        unsigned short rx_size;
+                              ^
+                               = 0
+../Lib/BSP/W5500.c(522): warning: result of comparison of 4-bit unsigned value != 34 is always true [-Wtautological-value-range-compare]
+        if ((Read_W5500_SOCK_1Byte(s, Sn_MR) & 0x0f) != SOCK_UDP) //<C8><E7><B9><FB>Socket<B4><F2><BF><AA>ʧ<B0><DC>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ^  ~~~~~~~~
+../Lib/BSP/W5500.c(759): warning: 'return' will never be executed [-Wunreachable-code-return]
+        return 0;
+               ^
+33 warnings generated.
+compiling W5500.c...
+../User/GNSS.c(4): warning: In file included from...
+../User/GNSS.h(8): warning: In file included from...
+../Lib/CMSIS/Device/Include\STAR.h(178): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+../Lib/CMSIS/Device/Include\STAR.h(196): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+../Lib/CMSIS/Device/Include\STAR.h(218): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+../User/GNSS.c(23): warning: non-void function does not return a value [-Wreturn-type]
+}
+^
+4 warnings generated.
+compiling GNSS.c...
+linking...
+Program Size: Code=2480 RO-data=2236 RW-data=8 ZI-data=3168  
+FromELF: creating hex file...
+After Build - User command #1: E:\Keil_v5\\ARM\ARMCC\BIN\fromelf.exe E:\zhiduojing\ahb_adc_mux\CM33_software\MDK\Objects\CM33.axf -c -d -e -s --output CM33.lst
+After Build - User command #2: E:\Keil_v5\\ARM\ARMCC\BIN\fromelf.exe E:\zhiduojing\ahb_adc_mux\CM33_software\MDK\Objects\CM33.axf --bin -o CM33.bin
+".\Objects\CM33.axf" - 0 Error(s), 227 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.8.0.pack
+                ARM.CMSIS.5.8.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+
+<h2>Collection of Component include folders:</h2>
+  E:\Keil_v5\Packs\ARM\CMSIS\5.8.0\Device\ARM\ARMCM33\Include
+
+<h2>Collection of Component Files used:</h2>
+Build Time Elapsed:  00:00:02
+</pre>
+</body>
+</html>

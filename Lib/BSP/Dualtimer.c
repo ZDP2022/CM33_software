@@ -1,0 +1,121 @@
+#include "STAR_dualtimer.h"
+#include "STAR_rcc.h"
+#include "Dualtimer.h"
+#include "STAR.h"
+#include "STAR_gpio.h"
+
+//LED0-GPIO0_0
+#define LED0_PORT	STAR_GPIO0
+#define LED0_PIN	GPIO_Pin_0
+
+//LED1-GPIO0_1
+#define LED1_PORT	STAR_GPIO0
+#define LED1_PIN	GPIO_Pin_1
+
+//LED开启控制
+#define LED0_ON		GPIO_ResetBit(LED0_PORT,LED0_PIN)
+#define LED1_ON		GPIO_ResetBit(LED1_PORT,LED1_PIN)
+
+//LED关闭控制
+#define LED0_OFF	GPIO_SetBit(LED0_PORT,LED0_PIN)
+#define LED1_OFF 	GPIO_SetBit(LED1_PORT,LED1_PIN)
+
+
+//DualTimerx Timer1初始化
+static void DTMIx_Timer1_Init(DUALTIMER_TypeDef* DUALTIMERx)
+{	
+	//Timer1配置为计数器32位、预分频系数为1、初始加载值25000000；PCLK=25M 定时1s 加载值为25000000
+	DTIM_Init(DUALTIMERx,DTIM_DUALTIMERx_1,DTIM_SIZE_32bit,DTIM_TIMERPRE_1,25000000);	
+	//Timer1配置为Periodic模式
+	DTIM_MODE(DUALTIMERx,DTIM_DUALTIMERx_1,DTIM_MODE_PERIODIC);	
+	//启用中断
+	DTIM_ITConfig(DUALTIMERx,DTIM_DUALTIMERx_1, ENABLE);
+	//Reload值为25000000
+	DTIM_SetBGLOAD(DUALTIMERx,DTIM_DUALTIMERx_1,25000000);
+	//清除中断
+	DTIM_ClearIT(DUALTIMERx,DTIM_DUALTIMERx_1,ENABLE);
+	
+}
+
+////DualTimerx Timer2初始化
+static void DTMIx_Timer2_Init(DUALTIMER_TypeDef* DUALTIMERx)
+{		
+	
+	//Timer2配置为计数器32位、预分频系数为256、初始加载值 50000000；PCLK=25M 定时2s 加载值为50000000
+	DTIM_Init(DUALTIMERx,DTIM_DUALTIMERx_2,DTIM_SIZE_32bit,DTIM_TIMERPRE_1,50000000);
+	//Timer2配置为Periodic模式
+	DTIM_MODE(DUALTIMERx,DTIM_DUALTIMERx_2,DTIM_MODE_PERIODIC);
+	//启用中断
+	DTIM_ITConfig(DUALTIMERx,DTIM_DUALTIMERx_2, ENABLE);	
+	//Reload值为50000000
+	DTIM_SetBGLOAD(DUALTIMERx,DTIM_DUALTIMERx_2,50000000);
+	//清除中断
+	DTIM_ClearIT(DUALTIMERx,DTIM_DUALTIMERx_2,ENABLE);
+	
+}
+
+//双定时器初始配置
+void DTMIx_Init(void)
+{
+	DUALTIMER_TypeDef* DUALTIMERx;
+	
+	DUALTIMERx = STAR_DUALTIMER0;
+	
+	DTIM_DeInit(DUALTIMERx);
+	
+	DTMIx_Timer1_Init(DUALTIMERx);
+	DTIM_ENABLE(DUALTIMERx,DTIM_DUALTIMERx_1,ENABLE); //DualTimerx Timer1使能
+	
+	DTMIx_Timer2_Init(DUALTIMERx);
+	DTIM_ENABLE(DUALTIMERx,DTIM_DUALTIMERx_2,ENABLE);	//DualTimerx Timer2使能
+	
+	//中断使能
+	if(DUALTIMERx == STAR_DUALTIMER0)
+	{
+		NVIC_EnableIRQ(DUALTIMER0_IRQn);
+	}
+	else
+	{
+		NVIC_EnableIRQ(DUALTIMER1_IRQn);
+	}
+}
+
+//DualTimer0 中断处理函数
+void DUALTIMER0_Handler(void)
+{
+	uint32_t val;
+	
+	val = DTIM_Timer0MISValue(STAR_DUALTIMER0,DTIM_DUALTIMERx_1);
+	if(val&0x01)
+	{
+		GPIO_TogglePin(LED0_PORT,LED0_PIN);
+		DTIM_ClearIT(STAR_DUALTIMER0,DTIM_DUALTIMERx_1,ENABLE);
+	}
+	
+	val = DTIM_Timer0MISValue(STAR_DUALTIMER0,DTIM_DUALTIMERx_2);
+	if(val&0x01)
+	{
+		GPIO_TogglePin(LED1_PORT,LED1_PIN);
+		DTIM_ClearIT(STAR_DUALTIMER0,DTIM_DUALTIMERx_2,ENABLE);
+	}
+}
+
+//DualTimer1 中断处理函数
+void DUALTIMER1_Handler(void)
+{
+	uint32_t val;
+	
+	val = DTIM_Timer0MISValue(STAR_DUALTIMER1,DTIM_DUALTIMERx_1);
+	if(val&0x01)
+	{
+		GPIO_TogglePin(LED1_PORT,LED1_PIN);
+		DTIM_ClearIT(STAR_DUALTIMER1,DTIM_DUALTIMERx_1,ENABLE);
+	}
+	
+	val = DTIM_Timer0MISValue(STAR_DUALTIMER1,DTIM_DUALTIMERx_2);
+	if(val&0x01)
+	{
+		GPIO_TogglePin(LED0_PORT,LED0_PIN);
+		DTIM_ClearIT(STAR_DUALTIMER1,DTIM_DUALTIMERx_2,ENABLE);
+	}
+}
